@@ -1,0 +1,21 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "items": [
+            {
+              "items": [
+                "minecraft:white_banner"
+              ],
+              "nbt": "{bhunt_banner:true}"
+            }
+          ]
+        }
+      }
+    },
+    "rewards": {
+      "function": "bhunt:player_banner/obtain_check"
+    }
+  }
+  
