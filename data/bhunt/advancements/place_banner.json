@@ -9,7 +9,8 @@
             "predicate": {
               "block": {
                 "blocks": [
-                  "minecraft:white_banner"
+                  "minecraft:white_banner",
+                  "minecraft:white_wall_banner"
                 ]
               }
             }

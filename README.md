@@ -1,2 +1,2 @@
 hi there hello
-feel free to improve code
+feel free to point out bad code

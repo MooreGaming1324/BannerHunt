@@ -5,6 +5,9 @@
  # Created by MooreGaming1324.
 ##
 
+scoreboard objectives add bhunt.settings dummy
+
+
 #      Banner Hunt v1.0
 # [Click Here] to get started!
 execute unless score .setup bhunt.settings matches 1.. run tellraw @a ["",{"text":" \u0020 \u0020 \u0020 Banner Hunt ","color":"gray"},{"text":"Altered Ed.","color":"green"},{"text":"\n"},{"text":" [Click Here]","color":"white","clickEvent":{"action":"run_command","value":"/function bannerhunt:setup"},"hoverEvent":{"action":"show_text","contents":"/function bannerhunt:setup"}},{"text":" to get started!","color":"gray"}]
@@ -26,7 +29,6 @@ scoreboard objectives add bhunt.banner_place dummy
 scoreboard objectives add bhunt.main dummy
 scoreboard objectives add bhunt.leave minecraft.custom:minecraft.leave_game
 scoreboard objectives add bhunt.score dummy "Banner Hunt Points"
-scoreboard objectives add bhunt.settings dummy
 scoreboard objectives add bhunt.addup dummy
 
 team add content

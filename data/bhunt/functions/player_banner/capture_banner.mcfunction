@@ -13,11 +13,11 @@ execute as @a at @s if score .noise_toggle bhunt.settings matches 1.. run playso
 
 tp @e[type=item,sort=nearest,limit=1,nbt={Item:{id:"minecraft:white_banner"}}] @s
 
-tellraw @a ["",{"text":"[!] ","color":"aqua"},{"selector":"@s","color":"yellow"},{"text":" has captured the flag!","color":"yellow"}]
+#tellraw @a ["",{"text":"[!] ","color":"aqua"},{"selector":"@s","color":"yellow"},{"text":" has captured the flag!","color":"yellow"}]
 
-execute if entity @s[team=story] run tag @s add team_story
-execute if entity @s[team=content] run tag @s add team_content
+#execute if entity @s[team=story] run tag @s add team_story
+#execute if entity @s[team=content] run tag @s add team_content
 
-team join bhunt.banner
+#team join bhunt.banner
 
 execute at @s run summon area_effect_cloud ~ ~ ~ {Duration:21,Tags:["bhunt.move"]}
