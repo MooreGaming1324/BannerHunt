@@ -10,8 +10,7 @@ kill @s
 
 execute as @a[team=bhunt.banner] run effect clear @s glowing
 execute as @a[team=bhunt.banner] run team leave @s
-execute as @a[team=bhunt.banner,tag=team_content] run team join content
-execute as @a[team=bhunt.banner,tag=team_story] run team join story
+
 tag @a remove bhunt.placed
 
 

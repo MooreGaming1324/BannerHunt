@@ -1,5 +1,5 @@
 ##
- # lose_banner.mcfunction
+ # lose.mcfunction
  # 
  #
  # Created by MooreGaming1324.
@@ -7,8 +7,6 @@
 
 effect clear @s glowing
 team leave @s
-execute if entity @s[tag=team_content] run team join content
-execute if entity @s[tag=team_story] run team join story
 tag @s remove bhunt.placed
 
 tellraw @a ["",{"text":"[!] ","color":"aqua"},{"selector":"@s","color":"yellow"},{"text":" has lost the flag!","color":"yellow"}]

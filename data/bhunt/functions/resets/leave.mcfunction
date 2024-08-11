@@ -5,8 +5,7 @@
  # Created by MooreGaming1324.
 ##
 team leave @s
-execute as @s[tag=team_content] run team join content
-execute as @s[tag=team_story] run team join story
+
 tag @s remove bhunt.placed
 clear @s white_banner{bhunt_banner:true}
 
