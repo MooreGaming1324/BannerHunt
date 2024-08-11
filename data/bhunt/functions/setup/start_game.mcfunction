@@ -4,6 +4,10 @@
  #
  # Created by MooreGaming1324.
 ##
+execute store result score .feedback bhunt.main run gamerule sendCommandFeedback
+gamerule sendCommandFeedback false
+schedule function bhunt:setup/return_feedback 1t
+
 execute at @s run playsound minecraft:ui.button.click ambient @s ~ ~ ~ 1 1 1
 scoreboard players set .started bhunt.settings 1
 

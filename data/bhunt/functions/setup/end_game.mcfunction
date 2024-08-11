@@ -7,6 +7,8 @@
 
 team remove bhunt.banner
 team add bhunt.banner
+team modify bhunt.banner color gold
+team modify bhunt.banner prefix {"bold":true,"text":"[Flag] "}
 
 #del banners
 execute as @e[type=marker,tag=bhunt.banner_marker] at @s run function bhunt:new_banner/delete
